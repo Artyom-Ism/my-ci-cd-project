@@ -30,7 +30,7 @@ jobs:
 
       - name: Генерация документации с помощью pdoc
         run: |
-          pdoc calculator.py --html --output-dir docs --force
+          pdoc calculator.py -o docs
 
       - name: Публикация документации на GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
