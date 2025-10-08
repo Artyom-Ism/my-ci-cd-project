@@ -1,6 +1,5 @@
 name: CI for Calculator
 
-
 on:
   push:
     branches: [ "main", "development", "release" ]
