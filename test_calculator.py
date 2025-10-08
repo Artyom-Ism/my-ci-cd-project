@@ -1,4 +1,4 @@
-from calculator import add, subtract, mul
+from calculator import add, subtract, mul, div
 
 def test_add():
     assert add(2, 3) == 5
@@ -18,3 +18,9 @@ def test_mul():
     assert mul(5, 2) == 10
     assert mul(9, 9) == 81
     assert mul(8, 2) == 16
+    
+def test_div():
+    assert div(9, 3) == 3
+    assert div(21, 3) == 7
+    assert div(6, 2) == 3
+    assert div(8, 2) == 4
