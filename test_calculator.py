@@ -12,6 +12,7 @@ def test_subtract():
     assert subtract(10, 10) == 0
     assert subtract(-2, -3) == 1
 
+
 def test_mul():
     assert mul(7, 3) == 21
     assert mul(5, 2) == 10
