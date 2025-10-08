@@ -1,6 +1,5 @@
 name: CI for Calculator
 
-
 on:
   push:
     branches: [ "main", "development", "release" ]
@@ -28,3 +27,13 @@ jobs:
       - name: Запуск тестов
         run: |
           pytest
+
+      - name: Генерация документации с помощью pdoc
+        run: |
+          pdoc calculator.py --html --output-dir docs --force
+
+      - name: Публикация документации на GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/calculator
