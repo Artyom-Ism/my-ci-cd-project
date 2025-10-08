@@ -19,7 +19,7 @@ def test_mul():
     assert mul(8, 2) == 16
 
 def test_div():
-    assert mul(8, 2) == 4
-    assert mul(21, 3) == 7
-    assert mul(9, 3) == 3
-    assert mul(6, 2) == 3
+    assert div(8, 2) == 4
+    assert div(21, 3) == 7
+    assert div(9, 3) == 3
+    assert div(6, 2) == 3
